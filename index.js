@@ -64,3 +64,5 @@ function userInput() {
          
     ]);
 }
+
+userInput();

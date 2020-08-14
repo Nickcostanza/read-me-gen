@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const CheckboxPrompt = require('inquirer/lib/prompts/checkbox');
+
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -65,4 +65,30 @@ function userInput() {
     ]);
 }
 
-userInput();
+function createMarkdown(res) {
+    return `
+    # ${response.title}
+
+    # Table of Contents
+
+    - [Description](#description)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contributors](#contribution)
+    - [Test](#test)
+    - [Credits](#credits)
+    - [License](#license)
+    - [Questions](#questions)
+
+    ## Description
+        ![License](${res.license})
+    ${res.desciption}
+    ## Installation
+    ${res.installation}
+    ## Usage
+    ${res.usage}
+    ## Contributors
+    ${res.contribution}
+        
+    
+}

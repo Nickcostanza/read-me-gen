@@ -67,7 +67,7 @@ function userInput() {
 
 function createMarkdown(response) {
     return `
-    # ${response.title}
+# ${response.title}
 
 # Table of Contents
 
@@ -81,7 +81,7 @@ function createMarkdown(response) {
 
 ## Description
 ![License](https://img.shields.io/badge/License-${response.license}-blue.svg "License Badge")
-        ${response.desciption}
+        ${response.description}
 ## Installation
         ${response.installation}
  ## Usage

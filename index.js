@@ -69,34 +69,34 @@ function createMarkdown(response) {
     return `
     # ${response.title}
 
-    # Table of Contents
+# Table of Contents
 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributors](#contribution)
-    - [Test](#test)
-    - [License](#license)
-    - [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contribution)
+- [Test](#test)
+- [License](#license)
+- [Questions](#questions)
 
-    ## Description
+## Description
         ![License](${response.license})
         ${response.desciption}
-    ## Installation
+## Installation
         ${response.installation}
-    ## Usage
+ ## Usage
         ${response.usage}
-    ## Contributors
+## Contributors
         ${response.contribution}
-    ## Test
+## Test
         ${response.test}
-    ## License
+## License
         ${response.license}
 
-     ## Questions
-        If you have any questions regarding this Project feel free to reach out to my Github account or via Email
-        - [Github Profile](https://github.com/${response.username})
-        - Email: ${response.email}   
+ ## Questions
+    If you have any questions regarding this Project feel free to reach out to my Github account or via Email
+- [Github Profile](https://github.com/${response.username})
+- Email: ${response.email}   
   `;
 }
 

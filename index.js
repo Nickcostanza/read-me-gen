@@ -65,7 +65,7 @@ function userInput() {
     ]);
 }
 
-function createMarkdown(res) {
+function createMarkdown(response) {
     return `
     # ${response.title}
 
@@ -76,19 +76,45 @@ function createMarkdown(res) {
     - [Usage](#usage)
     - [Contributors](#contribution)
     - [Test](#test)
-    - [Credits](#credits)
     - [License](#license)
     - [Questions](#questions)
 
     ## Description
-        ![License](${res.license})
-    ${res.desciption}
+        ![License](${response.license})
+        ${response.desciption}
     ## Installation
-    ${res.installation}
+        ${response.installation}
     ## Usage
-    ${res.usage}
+        ${response.usage}
     ## Contributors
-    ${res.contribution}
-        
-    
+        ${response.contribution}
+    ## Test
+        ${response.test}
+    ## License
+        ${response.license}
+
+     ## Questions
+        If you have any questions regarding this Project feel free to reach out to my Github account or via Email
+        - [Github Profile](https://github.com/${response.username})
+        - Email: ${response.email}   
+  `;
 }
+
+//Function intializing Program
+
+async function init()  {
+    try {
+        const response = await userInput();
+        const readMe = createMarkdown(response);
+
+        await writeFileAsync('README.md', readMe);
+        console.log('Success');   
+    }
+    catch (err) {
+        console.log(err);
+    }
+
+}
+
+init();
+

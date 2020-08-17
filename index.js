@@ -80,7 +80,7 @@ function createMarkdown(response) {
 - [Questions](#questions)
 
 ## Description
-        ![License](${response.license})
+![License](https://img.shields.io/badge/License-${response.license}-blue.svg "License Badge")
         ${response.desciption}
 ## Installation
         ${response.installation}
@@ -108,7 +108,7 @@ async function init()  {
         const readMe = createMarkdown(response);
 
         await writeFileAsync('README.md', readMe);
-        console.log('Success');   
+        console.log('Successful File');   
     }
     catch (err) {
         console.log(err);

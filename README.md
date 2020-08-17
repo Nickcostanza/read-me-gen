@@ -12,7 +12,6 @@
 - [Questions](#questions)
 
 ## Description
-![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
         For this homework assignment, we needed to utilize node.js to create a CLI app that would help format, and create a README.md File.
 ## Installation
         You will need to Clone or download repository, also make sure you have node.js installed. Once you have the files, in your terminal run "npm install" in your terminal to download required dependencies.
@@ -23,7 +22,7 @@
 ## Test
         Functionality is simple, just run the application in terminal to test it out.
 ## License
-        MIT
+![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
 
  ## Questions
     If you have any questions regarding this Project feel free to reach out to my Github account or via Email

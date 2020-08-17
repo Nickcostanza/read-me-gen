@@ -80,7 +80,6 @@ function createMarkdown(response) {
 - [Questions](#questions)
 
 ## Description
-![License](https://img.shields.io/badge/License-${response.license}-blue.svg "License Badge")
         ${response.description}
 ## Installation
         ${response.installation}
@@ -91,7 +90,7 @@ function createMarkdown(response) {
 ## Test
         ${response.test}
 ## License
-        ${response.license}
+![License](https://img.shields.io/badge/License-${response.license}-blue.svg "License Badge")
 
  ## Questions
     If you have any questions regarding this Project feel free to reach out to my Github account or via Email
